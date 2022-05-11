@@ -1,9 +1,13 @@
-import logo from './logo.svg'
 import './App.css'
+import { ContextProvider } from './context/ContextProvider'
 import Counter from './components/Counter/Counter'
 
 function App() {
-  return <Counter />
+  return (
+  <ContextProvider>
+    <Counter />
+  </ContextProvider>
+  )
 }
 
 export default App
