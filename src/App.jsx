@@ -1,12 +1,12 @@
 import './App.css'
-import { ContextProvider } from './context/ContextProvider'
+import { CounterProvider } from './context/CounterProvider'
 import Counter from './components/Counter/Counter'
 
 function App() {
   return (
-  <ContextProvider>
+  <CounterProvider>
     <Counter />
-  </ContextProvider>
+  </CounterProvider>
   )
 }
 
