@@ -1,9 +1,13 @@
-import logo from './logo.svg'
 import './App.css'
+import { CounterProvider } from './context/CounterProvider'
 import Counter from './components/Counter/Counter'
 
 function App() {
-  return <Counter />
+  return (
+  <CounterProvider>
+    <Counter />
+  </CounterProvider>
+  )
 }
 
 export default App
